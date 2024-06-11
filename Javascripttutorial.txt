@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<title>JavaScript</title>
+</head>
+<body>
+<h1 id="head">Hello</h1>
+
+<p id="idpara"></p>
+
+<form name="forms" onSubmit="return addition()">
+Name:<input type="text" id="username" value="username" >
+Num1:<input type="text" id="user1"  >
+Num2:<input type="text" id="user2"  >
+<input type="submit" value="submit">
+
+</form>
+
+
+<form name="forms1" onSubmit="return onClick()">
+Num1:<input type="text" id="user3" name="num1" >
+Num2:<input type="text" id="user4" name="num2" >
+<input type="submit" value="submit">
+</form>
+
+<p id="ans"></p>
+
+
+
+
+
+
+
+<script>
+let a=10;
+const b=10;
+var c=40;
+
+const name='Dharnesh';
+const boolean =true;
+const ar =[1,"dharnesh",24];
+
+document.write(name);
+document.write(boolean);
+document.write(ar);
+
+
+document.write("Number format: "+c +" "+b+" "+a);
+
+let variable = document.getElementById("idpara").innerHtml="Hello";
+document.write(" Getelement: "+variable);
+
+let heaad = document.getElementById("head").style.backgroundColor="red";
+document.write(head);
+
+let num1 =1;
+let num2 =1;
+document.write("add: "+(num1+num2));
+document.write(" add"+"sub");
+
+if(num1===num2){
+document.write(" Equal");}
+else{
+document.write(" Not Equal");}
+
+if(!(num1===num2)){
+document.write(" true");}
+else{
+document.write(" false");}
+
+if(num1!==num2){
+document.write("false");}else{document.write(" true");}
+
+
+
+
+
+function addition(){
+let username=document.getElementById("username").value;
+let num1 = document.getElementById("user1").value;
+let num2 = document.getElementById("user2").value;
+let num3 = num1+num2;
+let ans =document.getElementById("ans").innerHtml=num3;
+document.write(num3);
+}
+
+function onClick(){
+const num1 =document.forms[forms1][num1].value;
+const num2 = document.getElementById("user4").value;
+if(num1===num2){
+alert("Equal "+ num1+"="+num2);
+}
+else{
+alert("Not equal");
+}
+}
+
+
+</script>
+</body>
+</html>
