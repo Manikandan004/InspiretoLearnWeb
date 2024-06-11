@@ -1,0 +1,360 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.header img {
+    margin-right: auto;
+}
+
+.header ul {
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header ul li {
+    display: inline;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    background-color:rgb(235, 148, 42);
+    padding:10px;
+    border-radius:10px;
+}
+.header ul li a:hover{
+    background-color: azure;
+    color:black;
+}
+.container {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: url('https://www.learningandthebrain.com/blog/wp-content/uploads/2018/09/AdobeStock_182043612_Credit.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+    z-index: 1;
+}
+
+/* .container h1,
+.container p {
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+} */
+
+.container h1 {
+    position: absolute;
+    z-index: 2;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.container p {
+    position: relative;
+    z-index: 2;
+    margin-top:100px;
+    font-size: 1.2em;
+}
+
+.box1 {
+    height: 200px;
+    width: 32%;
+    padding: 20px;
+    margin-right:5px;
+    margin-left:3px;
+    background-color: antiquewhite; 
+    /* border-radius: 10px;  */
+    text-align: left;
+    float:left;
+    overflow: hidden; 
+}
+
+.box1 h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box1 ul {
+    list-style-type: disc;
+    padding-left: 20px; 
+    margin: 10px 0;
+}
+
+.box1 ul li {
+    margin-bottom: 5px;
+}
+
+.box1 h4 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    background-color:rgb(235, 148, 42);
+    width:100px;
+    padding:10px;
+    border-radius: 5px;
+    color:white;
+}
+.box1 h4:hover{
+    background-color: white;
+    color:black;
+}
+
+.box2 {
+    height: 200px;
+    width: 32%;
+    padding: 20px;
+    margin-right:5px;
+    background-color: antiquewhite; 
+    /* border-radius: 10px;  */
+    text-align: left;
+    float:left;
+    overflow: hidden; 
+}
+
+.box2 h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box2 ul {
+    list-style-type: disc;
+    padding-left: 20px; 
+    margin: 10px 0;
+}
+
+.box2 ul li {
+    margin-bottom: 5px;
+}
+
+.box2 h4 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    background-color:rgb(235, 148, 42);
+    width:100px;
+    padding:10px;
+    /* border-radius: 5px; */
+    color:white;
+}
+.box2 h4:hover{
+    background-color: white;
+    color:black;
+}
+
+
+.box3 {
+    height: 200px;
+    width: 26%;
+    padding: 20px;
+    background-color: antiquewhite; 
+    /* border-radius: 10px;  */
+    text-align: left;
+    float:left;
+    overflow: hidden; 
+}
+
+.box3 h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box3 ul {
+    list-style-type: disc;
+    padding-left: 20px; 
+    margin: 10px 0;
+}
+
+.box3 ul li {
+    margin-bottom: 5px;
+}
+
+.box3 h4 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    background-color:rgb(235, 148, 42);
+    width:100px;
+    padding:10px;
+    /* border-radius: 5px; */
+    color:white;
+}
+.box3 h4:hover{
+    background-color: white;
+    color:black;
+}
+.parent-container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top:10px;
+}
+
+.getstarted, .image {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    float:left;
+}
+
+.getstarted {
+    flex-direction: column;
+    background-color:rgb(235, 148, 42); /* Light background color */
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.getstarted h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.getstarted blockquote{
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.getstarted h4 {
+    font-size: 1.5em;
+    margin: 20px 0 0 0; /* Adjust as needed for spacing */
+    background-color: antiquewhite;
+    padding:10px;
+    border-radius:10px;
+    color:black;
+}
+.getstarted h4:hover{
+    background-color: rgb(233, 170, 93);
+    color:white;
+}
+
+.image iframe {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    /* opacity:0.9; */
+}
+
+.getstarted1, .image1 {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    float:left;
+}
+
+.getstarted1 {
+    flex-direction: column;
+    background-color:rgb(235, 148, 42); /* Light background color */
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.getstarted1 h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.getstarted1 blockquote{
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.getstarted1 h4 {
+    font-size: 1.5em;
+    margin: 20px 0 0 0; /* Adjust as needed for spacing */
+    background-color: antiquewhite;
+    padding:10px;
+    border-radius:10px;
+    color:black;
+}
+.getstarted1 h4:hover{
+    background-color: rgb(233, 170, 93);
+    color:white;
+}
+
+.image1 img {
+    background-color: grey;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    opacity:0.9;
+}
+.contact-container {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    width: 100%;
+    margin: 20px 0;
+}
+
+.contact {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    /* padding:30px; */
+    height:200px; /* Center the text horizontally */
+}
+
+.contact h1 {
+    margin-top: 30px;
+}
+
+.contactform {
+    width: 50%;
+    padding: 20px;
+}
+
+.contactform table {
+    width: 100%;
+}
+
+.contactform table input[type="text"],
+.contactform table input[type="tel"],
+.contactform table input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+.contactform table input[type="submit"]{
+    background-color:rgb(233, 170, 93);
+    padding:10px;
+    border: none;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: rgb(233, 170, 93);
+    width:100%;
+    padding:8px;
+    text-align: center;
+}
